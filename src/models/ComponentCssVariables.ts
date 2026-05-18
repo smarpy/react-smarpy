@@ -29,4 +29,17 @@ export default interface ComponentCssVariables {
   heading?: {
     fontFamily?: string;
   };
+  speechBubble?: {
+    avatarSizeDefault?: `${number}rem`;
+    avatarSizeSmall?: `${number}rem`;
+    avatarSizeLarge?: `${number}rem`;
+    avatarTopOffset?: `${number}rem`;
+    nameFontSize?: `${number}rem` | FontSize;
+    namePaddingX?: `${number}rem`;
+    namePaddingY?: `${number}rem`;
+    messageArrowWidth?: `${number}rem`;
+    messageArrowHeight?: `${number}rem`;
+    messageInnerPaddingX?: `${number}rem`;
+    messageInnerPaddingY?: `${number}rem`;
+  };
 }

@@ -780,6 +780,32 @@ function getRootStyles<BaseComponentColorNameType extends string>(
             const progress = components.progress;
             setComponentSchemeColor(progress, `progress`);
           }
+
+          if (components.speechBubble) {
+            const speechBubble = components.speechBubble;
+            setComponentSchemeColor(speechBubble, `speech-bubble`);
+
+            if (speechBubble.speechBubbleAvatar) {
+              const speechBubbleAvatar = speechBubble.speechBubbleAvatar;
+              setComponentSchemeColor(
+                speechBubbleAvatar,
+                `speech-bubble-avatar`,
+              );
+            }
+
+            if (speechBubble.speechBubbleName) {
+              const speechBubbleName = speechBubble.speechBubbleName;
+              setComponentSchemeColor(speechBubbleName, `speech-bubble-name`);
+            }
+
+            if (speechBubble.speechBubbleMessage) {
+              const speechBubbleMessage = speechBubble.speechBubbleMessage;
+              setComponentSchemeColor(
+                speechBubbleMessage,
+                `speech-bubble-message`,
+              );
+            }
+          }
         }
       }
     }
@@ -986,6 +1012,71 @@ function getRootStyles<BaseComponentColorNameType extends string>(
         if (heading.fontFamily) {
           rootStyles.push(
             `--${prefix}font-family-heading: ${heading.fontFamily};`,
+          );
+        }
+      }
+
+      if (components.speechBubble) {
+        const speechBubble = components.speechBubble;
+        if (speechBubble.avatarSizeDefault) {
+          rootStyles.push(
+            `--${prefix}speech-bubble-avatar-size-default: ${speechBubble.avatarSizeDefault};`,
+          );
+        }
+        if (speechBubble.avatarSizeSmall) {
+          rootStyles.push(
+            `--${prefix}speech-bubble-avatar-size-small: ${speechBubble.avatarSizeSmall};`,
+          );
+        }
+        if (speechBubble.avatarSizeLarge) {
+          rootStyles.push(
+            `--${prefix}speech-bubble-avatar-size-large: ${speechBubble.avatarSizeLarge};`,
+          );
+        }
+        if (speechBubble.avatarTopOffset) {
+          rootStyles.push(
+            `--${prefix}speech-bubble-avatar-top-offset: ${speechBubble.avatarTopOffset};`,
+          );
+        }
+        if (speechBubble.nameFontSize) {
+          if (typeof speechBubble.nameFontSize.includes("rem")) {
+            rootStyles.push(
+              `--${prefix}speech-bubble-name-font-size: ${speechBubble.nameFontSize};`,
+            );
+          } else {
+            rootStyles.push(
+              `--${prefix}speech-bubble-name-font-size: var(--${prefix}font-size-${speechBubble.nameFontSize});`,
+            );
+          }
+        }
+        if (speechBubble.namePaddingX) {
+          rootStyles.push(
+            `--${prefix}speech-bubble-name-padding-x: ${speechBubble.namePaddingX};`,
+          );
+        }
+        if (speechBubble.namePaddingY) {
+          rootStyles.push(
+            `--${prefix}speech-bubble-name-padding-y: ${speechBubble.namePaddingY};`,
+          );
+        }
+        if (speechBubble.messageArrowHeight) {
+          rootStyles.push(
+            `--${prefix}speech-bubble-message-arrow-height: ${speechBubble.messageArrowHeight};`,
+          );
+        }
+        if (speechBubble.messageArrowWidth) {
+          rootStyles.push(
+            `--${prefix}speech-bubble-message-arrow-width: ${speechBubble.messageArrowWidth};`,
+          );
+        }
+        if (speechBubble.messageInnerPaddingX) {
+          rootStyles.push(
+            `--${prefix}speech-bubble-message-inner-padding-x: ${speechBubble.messageInnerPaddingX};`,
+          );
+        }
+        if (speechBubble.messageInnerPaddingY) {
+          rootStyles.push(
+            `--${prefix}speech-bubble-message-inner-padding-y: ${speechBubble.messageInnerPaddingY};`,
           );
         }
       }

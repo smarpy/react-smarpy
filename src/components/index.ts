@@ -21,6 +21,8 @@ export * from "./AdminNavMenuItemBasic";
 
 export * from "./AdminNavMenuItemCollapsed";
 
+export * from "./Article";
+
 export * from "./Badge";
 
 export * from "./Breadcrumb";
@@ -99,6 +101,10 @@ export * from "./NavMenuItem";
 
 export * from "./NavStatic";
 
+export * from "./OrderedList";
+
+export * from "./OrderedListItem";
+
 export * from "./Paragraph";
 
 export * from "./Progress";
@@ -109,4 +115,23 @@ export * from "./Section";
 
 export * from "./Span";
 
+export * from "./SpeechBubble";
+
+export * from "./SpeechBubbleAvatar";
+
+export * from "./SpeechBubbleAvatarContainer";
+
+export * from "./SpeechBubbleContentContainer";
+
+export * from "./SpeechBubbleMessage";
+
+export * from "./SpeechBubbleMessageInner";
+
+export * from "./SpeechBubbleName";
+
 export * from "./Textarea";
+
+export * from "./UnorderedList";
+
+export * from "./UnorderedListItem";
+

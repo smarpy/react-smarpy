@@ -6,6 +6,9 @@ import classNames from "./DialogMessage.module.scss";
 import type DialogMessageProps from "./DialogMessageProps";
 import type { BaseDialogMessageProps } from "./DialogMessageProps";
 
+/**
+ * @deprecated Move to SpeechBubbleMessage
+ */
 export default function DialogMessage<
   BaseComponentColorNameType extends string = ColorName,
   ComponentPropsType extends
@@ -27,7 +30,7 @@ export default function DialogMessage<
   delete assignedProps["as"];
   //#endregion BaseComponentProps
 
-  const assignedClassNames: string[] = [classNames["dialog-message"]];
+  const assignedClassNames: string[] = [classNames["speech-bubble-message"]];
 
   const utilityClassNames = classNameUtility.getUtilityClassNames({
     fore: props.fore,

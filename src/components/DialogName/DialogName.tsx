@@ -6,6 +6,9 @@ import classNames from "./DialogName.module.scss";
 import type DialogNameProps from "./DialogNameProps";
 import type { BaseDialogNameProps } from "./DialogNameProps";
 
+/**
+ * @deprecated Move to SpeechBubbleName
+ */
 export default function DialogName<
   BaseComponentColorNameType extends string = ColorName,
   ComponentPropsType extends BaseDialogNameProps<BaseComponentColorNameType> =
@@ -25,7 +28,7 @@ export default function DialogName<
   delete assignedProps["as"];
   //#endregion BaseComponentProps
 
-  const assignedClassNames: string[] = [classNames["dialog-name"]];
+  const assignedClassNames: string[] = [classNames["speech-bubble-name"]];
 
   const utilityClassNames = classNameUtility.getUtilityClassNames({
     fore: props.fore,

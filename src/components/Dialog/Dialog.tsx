@@ -7,6 +7,9 @@ import classNames from "./Dialog.module.scss";
 import type { BaseDialogProps } from "./DialogProps";
 import type DialogProps from "./DialogProps";
 
+/**
+ * @deprecated Move to SpeechBubble
+ */
 export default function Dialog<
   BaseComponentColorNameType extends string = ColorName,
   ComponentPropsType extends BaseDialogProps<BaseComponentColorNameType> =
@@ -32,7 +35,7 @@ export default function Dialog<
   delete assignedProps["as"];
   //#endregion BaseComponentProps
 
-  const assignedClassNames = [classNames["dialog"]];
+  const assignedClassNames = [classNames["speech-bubble"]];
   if (props.isRight) {
     assignedClassNames.push(classNames[`is-right`]);
   } else {
@@ -69,19 +72,19 @@ export default function Dialog<
 
   const colorNameCss: Interpolation<Theme> = props.colorName
     ? {
-        ["--smarpy-dialog-color-fore"]: `var(--smarpy-color-${props.colorName}-dialog-fore, var(--smarpy-color-${props.colorName}-fore))`,
-        ["--smarpy-dialog-color-back"]: `var(--smarpy-color-${props.colorName}-dialog-back, var(--smarpy-color-${props.colorName}-back))`,
-        ["--smarpy-dialog-color-border"]: `var(--smarpy-color-${props.colorName}-dialog-border, var(--smarpy-color-${props.colorName}-border))`,
-        ["--smarpy-dialog-selection-color-fore"]: `var(--smarpy-color-${props.colorName}-dialog-selection-fore, var(--smarpy-color-${props.colorName}-selection-fore))`,
-        ["--smarpy-dialog-selection-color-back"]: `var(--smarpy-color-${props.colorName}-dialog-selection-back, var(--smarpy-color-${props.colorName}-selection-back))`,
-        ["--smarpy-dialog-avatar-color-back"]: `var(--smarpy-color-${props.colorName}-dialog-back)`,
-        ["--smarpy-dialog-avatar-color-border"]: `var(--smarpy-color-${props.colorName}-dialog-border)`,
-        ["--smarpy-dialog-name-color-fore"]: `var(--smarpy-color-${props.colorName}-dialog-name-fore)`,
-        ["--smarpy-dialog-name-color-back"]: `var(--smarpy-color-${props.colorName}-dialog-name-back)`,
-        ["--smarpy-dialog-name-color-border"]: `var(--smarpy-color-${props.colorName}-dialog-name-border)`,
-        ["--smarpy-dialog-message-color-fore"]: `var(--smarpy-color-${props.colorName}-dialog-message-fore)`,
-        ["--smarpy-dialog-message-color-back"]: `var(--smarpy-color-${props.colorName}-dialog-message-back)`,
-        ["--smarpy-dialog-message-color-border"]: `var(--smarpy-color-${props.colorName}-dialog-message-border)`,
+        ["--smarpy-speech-bubble-color-fore"]: `var(--smarpy-color-${props.colorName}-speech-bubble-fore, var(--smarpy-color-${props.colorName}-fore))`,
+        ["--smarpy-speech-bubble-color-back"]: `var(--smarpy-color-${props.colorName}-speech-bubble-back, var(--smarpy-color-${props.colorName}-back))`,
+        ["--smarpy-speech-bubble-color-border"]: `var(--smarpy-color-${props.colorName}-speech-bubble-border, var(--smarpy-color-${props.colorName}-border))`,
+        ["--smarpy-speech-bubble-selection-color-fore"]: `var(--smarpy-color-${props.colorName}-speech-bubble-selection-fore, var(--smarpy-color-${props.colorName}-selection-fore))`,
+        ["--smarpy-speech-bubble-selection-color-back"]: `var(--smarpy-color-${props.colorName}-speech-bubble-selection-back, var(--smarpy-color-${props.colorName}-selection-back))`,
+        ["--smarpy-speech-bubble-avatar-color-back"]: `var(--smarpy-color-${props.colorName}-speech-bubble-back)`,
+        ["--smarpy-speech-bubble-avatar-color-border"]: `var(--smarpy-color-${props.colorName}-speech-bubble-border)`,
+        ["--smarpy-speech-bubble-name-color-fore"]: `var(--smarpy-color-${props.colorName}-speech-bubble-name-fore)`,
+        ["--smarpy-speech-bubble-name-color-back"]: `var(--smarpy-color-${props.colorName}-speech-bubble-name-back)`,
+        ["--smarpy-speech-bubble-name-color-border"]: `var(--smarpy-color-${props.colorName}-speech-bubble-name-border)`,
+        ["--smarpy-speech-bubble-message-color-fore"]: `var(--smarpy-color-${props.colorName}-speech-bubble-message-fore)`,
+        ["--smarpy-speech-bubble-message-color-back"]: `var(--smarpy-color-${props.colorName}-speech-bubble-message-back)`,
+        ["--smarpy-speech-bubble-message-color-border"]: `var(--smarpy-color-${props.colorName}-speech-bubble-message-border)`,
       }
     : undefined;
 
