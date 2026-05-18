@@ -33,5 +33,10 @@ export default interface ColorSchemeColorComponents<BaseComponentColorNameType e
         messageBody?: ComponentColorSchemeColor<BaseComponentColorNameType> | undefined;
     };
     progress?: ComponentColorSchemeColor<BaseComponentColorNameType> | undefined;
+    speechBubble?: ComponentColorSchemeColor<BaseComponentColorNameType> & {
+        speechBubbleAvatar?: ComponentColorSchemeColor<BaseComponentColorNameType> | undefined;
+        speechBubbleName?: ComponentColorSchemeColor<BaseComponentColorNameType> | undefined;
+        speechBubbleMessage?: ComponentColorSchemeColor<BaseComponentColorNameType> | undefined;
+    };
 }
 //# sourceMappingURL=ColorSchemeColorComponents.d.ts.map
