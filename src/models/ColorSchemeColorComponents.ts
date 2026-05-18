@@ -70,4 +70,15 @@ export default interface ColorSchemeColorComponents<
       | undefined;
   };
   progress?: ComponentColorSchemeColor<BaseComponentColorNameType> | undefined;
+  speechBubble?: ComponentColorSchemeColor<BaseComponentColorNameType> & {
+    speechBubbleAvatar?:
+      | ComponentColorSchemeColor<BaseComponentColorNameType>
+      | undefined;
+    speechBubbleName?:
+      | ComponentColorSchemeColor<BaseComponentColorNameType>
+      | undefined;
+    speechBubbleMessage?:
+      | ComponentColorSchemeColor<BaseComponentColorNameType>
+      | undefined;
+  };
 }

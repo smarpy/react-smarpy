@@ -32,7 +32,7 @@ export const Plain: Story = {
       <Dialog {...props}>
         <DialogAvatarContainer>
           <DialogAvatar
-            src="https://kaminorse.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
+            src="https://smartupcorp.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
             alt="avatar"
           />
         </DialogAvatarContainer>
@@ -60,7 +60,7 @@ export const AvatarSizeLarge: Story = {
       <Dialog {...props}>
         <DialogAvatarContainer>
           <DialogAvatar
-            src="https://kaminorse.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
+            src="https://smartupcorp.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
             alt="avatar"
           />
         </DialogAvatarContainer>
@@ -88,7 +88,7 @@ export const AvatarSizeSmall: Story = {
       <Dialog {...props}>
         <DialogAvatarContainer>
           <DialogAvatar
-            src="https://kaminorse.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
+            src="https://smartupcorp.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
             alt="avatar"
           />
         </DialogAvatarContainer>
@@ -116,7 +116,7 @@ export const IsAvatarCircle: Story = {
       <Dialog {...props}>
         <DialogAvatarContainer>
           <DialogAvatar
-            src="https://kaminorse.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
+            src="https://smartupcorp.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
             alt="avatar"
           />
         </DialogAvatarContainer>
@@ -154,7 +154,7 @@ export const IsRight: Story = {
         </DialogContentContainer>
         <DialogAvatarContainer>
           <DialogAvatar
-            src="https://kaminorse.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
+            src="https://smartupcorp.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
             alt="avatar"
           />
         </DialogAvatarContainer>

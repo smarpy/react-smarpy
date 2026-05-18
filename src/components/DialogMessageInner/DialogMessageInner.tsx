@@ -6,7 +6,10 @@ import classNames from "./DialogMessageInner.module.scss";
 import type DialogMessageInnerProps from "./DialogMessageInnerProps";
 import type { BaseDialogMessageInnerProps } from "./DialogMessageInnerProps";
 
-export default function DialogMessageInnerInner<
+/**
+ * @deprecated Move to SpeechBubbleMessageInner
+ */
+export default function DialogMessageInner<
   BaseComponentColorNameType extends string = ColorName,
   ComponentPropsType extends
     BaseDialogMessageInnerProps<BaseComponentColorNameType> =
@@ -26,7 +29,7 @@ export default function DialogMessageInnerInner<
   delete assignedProps["as"];
   //#endregion BaseComponentProps
 
-  const assignedClassNames: string[] = [classNames["dialog-message-inner"]];
+  const assignedClassNames: string[] = [classNames["speech-bubble-message-inner"]];
 
   const utilityClassNames = classNameUtility.getUtilityClassNames({
     fore: props.fore,

@@ -6,6 +6,9 @@ import classNames from "./DialogContentContainer.module.scss";
 import type DialogContentContainerProps from "./DialogContentContainerProps";
 import type { BaseDialogContentContainerProps } from "./DialogContentContainerProps";
 
+/**
+ * @deprecated Move to SpeechBubbleContentContainer
+ */
 export default function DialogContentContainer<
   BaseComponentColorNameType extends string = ColorName,
   ComponentPropsType extends
@@ -27,7 +30,7 @@ export default function DialogContentContainer<
   delete assignedProps["as"];
   //#endregion BaseComponentProps
 
-  const assignedClassNames: string[] = [classNames["dialog-content-container"]];
+  const assignedClassNames: string[] = [classNames["speech-bubble-content-container"]];
 
   const utilityClassNames = classNameUtility.getUtilityClassNames({
     fore: props.fore,

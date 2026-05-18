@@ -6,6 +6,9 @@ import classNames from "./DialogAvatar.module.scss";
 import type DialogAvatarProps from "./DialogAvatarProps";
 import type { BaseDialogAvatarProps } from "./DialogAvatarProps";
 
+/**
+ * @deprecated Move to SpeechBubbleAvatar
+ */
 export default function DialogAvatar<
   BaseComponentColorNameType extends string = ColorName,
   ComponentPropsType extends BaseDialogAvatarProps<BaseComponentColorNameType> =
@@ -25,7 +28,7 @@ export default function DialogAvatar<
   delete assignedProps["as"];
   //#endregion BaseComponentProps
 
-  const assignedClassNames: string[] = [classNames["dialog-avatar"]];
+  const assignedClassNames: string[] = [classNames["speech-bubble-avatar"]];
 
   const utilityClassNames = classNameUtility.getUtilityClassNames({
     fore: props.fore,

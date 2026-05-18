@@ -114,6 +114,10 @@
       "types": "./dist/components/AdminNavMenuItemCollapsed/index.d.ts",
       "import": "./dist/components/AdminNavMenuItemCollapsed/index.js"
     },
+    "./components/Article": {
+      "types": "./dist/components/Article/index.d.ts",
+      "import": "./dist/components/Article/index.js"
+    },
     "./components/Badge": {
       "types": "./dist/components/Badge/index.d.ts",
       "import": "./dist/components/Badge/index.js"
@@ -270,9 +274,13 @@
       "types": "./dist/components/NavMenuItem/index.d.ts",
       "import": "./dist/components/NavMenuItem/index.js"
     },
-    "./components/NavStatic": {
-      "types": "./dist/components/NavStatic/index.d.ts",
-      "import": "./dist/components/NavStatic/index.js"
+    "./components/OrderedList": {
+      "types": "./dist/components/OrderedList/index.d.ts",
+      "import": "./dist/components/OrderedList/index.js"
+    },
+    "./components/OrderedListItem": {
+      "types": "./dist/components/OrderedListItem/index.d.ts",
+      "import": "./dist/components/OrderedListItem/index.js"
     },
     "./components/Paragraph": {
       "types": "./dist/components/Paragraph/index.d.ts",
@@ -294,9 +302,45 @@
       "types": "./dist/components/Span/index.d.ts",
       "import": "./dist/components/Span/index.js"
     },
+    "./components/SpeechBubble": {
+      "types": "./dist/components/SpeechBubble/index.d.ts",
+      "import": "./dist/components/SpeechBubble/index.js"
+    },
+    "./components/SpeechBubbleAvatar": {
+      "types": "./dist/components/SpeechBubbleAvatar/index.d.ts",
+      "import": "./dist/components/SpeechBubbleAvatar/index.js"
+    },
+    "./components/SpeechBubbleAvatarContainer": {
+      "types": "./dist/components/SpeechBubbleAvatarContainer/index.d.ts",
+      "import": "./dist/components/SpeechBubbleAvatarContainer/index.js"
+    },
+    "./components/SpeechBubbleContentContainer": {
+      "types": "./dist/components/SpeechBubbleContentContainer/index.d.ts",
+      "import": "./dist/components/SpeechBubbleContentContainer/index.js"
+    },
+    "./components/SpeechBubbleMessage": {
+      "types": "./dist/components/SpeechBubbleMessage/index.d.ts",
+      "import": "./dist/components/SpeechBubbleMessage/index.js"
+    },
+    "./components/SpeechBubbleMessageInner": {
+      "types": "./dist/components/SpeechBubbleMessageInner/index.d.ts",
+      "import": "./dist/components/SpeechBubbleMessageInner/index.js"
+    },
+    "./components/SpeechBubbleName": {
+      "types": "./dist/components/SpeechBubbleName/index.d.ts",
+      "import": "./dist/components/SpeechBubbleName/index.js"
+    },
     "./components/Textarea": {
       "types": "./dist/components/Textarea/index.d.ts",
       "import": "./dist/components/Textarea/index.js"
+    },
+    "./components/UnorderedList": {
+      "types": "./dist/components/UnorderedList/index.d.ts",
+      "import": "./dist/components/UnorderedList/index.js"
+    },
+    "./components/UnorderedListItem": {
+      "types": "./dist/components/UnorderedListItem/index.d.ts",
+      "import": "./dist/components/UnorderedListItem/index.js"
     },
     "./contexts": {
       "types": "./dist/contexts/index.d.ts",
@@ -369,7 +413,7 @@
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^11.12.0",
     "@emotion/react": "^11.14.0",
-    "@smartupcorp/smarpy": "^1.0.1",
+    "@smartupcorp/smarpy": "^2.0.0",
     "@storybook/addon-docs": "^9.0.3",
     "@storybook/react-vite": "^9.0.3",
     "@types/lodash": "^4.17.17",
