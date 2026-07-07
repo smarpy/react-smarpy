@@ -13,6 +13,7 @@ export default defineConfig({
     copyPublicDir: false,
     emptyOutDir: true,
     minify: "oxc",
+    cssMinify: "esbuild",
     lib: {
       entry: resolve(__dirname, "src/react-smarpy.ts"),
       name: "ReactSmarpy",
@@ -45,7 +46,7 @@ export default defineConfig({
           "@emotion/react": "EmotionReact",
         },
         assetFileNames: (chunkInfo) => {
-          return `${chunkInfo.names[0].replaceAll(".module", "")}`
+          return `${chunkInfo.names[0].replaceAll(".module", "")}`;
         },
         entryFileNames: "[name].js",
         preserveModules: true,
@@ -54,12 +55,7 @@ export default defineConfig({
     },
   },
   css: {
-    modules: {
-      globalModulePaths: [/.*\/src\/base\/Smarpy\/.*/],
-    },
-    preprocessorOptions: {
-      scss: {},
-    },
+    transformer: "postcss",
   },
   plugins: [
     react({
