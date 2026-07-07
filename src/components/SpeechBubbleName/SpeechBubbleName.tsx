@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./SpeechBubbleName.module.scss";
+import classNames from "../SpeechBubble/SpeechBubble.module.scss";
 import type SpeechBubbleNameProps from "./SpeechBubbleNameProps";
 import type { BaseSpeechBubbleNameProps } from "./SpeechBubbleNameProps";
 

@@ -39,20 +39,6 @@ export * from "./CardBody";
 
 export * from "./CardHeader";
 
-export * from "./Dialog";
-
-export * from "./DialogAvatar";
-
-export * from "./DialogAvatarContainer";
-
-export * from "./DialogContentContainer";
-
-export * from "./DialogMessage";
-
-export * from "./DialogMessageInner";
-
-export * from "./DialogName";
-
 export * from "./Div";
 
 export * from "./Footer";

@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./AdminNavBrandCollapsed.module.scss";
+import classNames from "../AdminNav/AdminNav.module.scss";
 import type AdminNavBrandCollapsedProps from "./AdminNavBrandCollapsedProps";
 import type { BaseAdminNavBrandCollapsedProps } from "./AdminNavBrandCollapsedProps";
 

@@ -154,34 +154,6 @@
       "types": "./dist/components/Checkbox/index.d.ts",
       "import": "./dist/components/Checkbox/index.js"
     },
-    "./components/Dialog": {
-      "types": "./dist/components/Dialog/index.d.ts",
-      "import": "./dist/components/Dialog/index.js"
-    },
-    "./components/DialogAvatar": {
-      "types": "./dist/components/DialogAvatar/index.d.ts",
-      "import": "./dist/components/DialogAvatar/index.js"
-    },
-    "./components/DialogAvatarContainer": {
-      "types": "./dist/components/DialogAvatarContainer/index.d.ts",
-      "import": "./dist/components/DialogAvatarContainer/index.js"
-    },
-    "./components/DialogContentContainer": {
-      "types": "./dist/components/DialogContentContainer/index.d.ts",
-      "import": "./dist/components/DialogContentContainer/index.js"
-    },
-    "./components/DialogMessage": {
-      "types": "./dist/components/DialogMessage/index.d.ts",
-      "import": "./dist/components/DialogMessage/index.js"
-    },
-    "./components/DialogMessageInner": {
-      "types": "./dist/components/DialogMessageInner/index.d.ts",
-      "import": "./dist/components/DialogMessageInner/index.js"
-    },
-    "./components/DialogName": {
-      "types": "./dist/components/DialogName/index.d.ts",
-      "import": "./dist/components/DialogName/index.js"
-    },
     "./components/Div": {
       "types": "./dist/components/Div/index.d.ts",
       "import": "./dist/components/Div/index.js"

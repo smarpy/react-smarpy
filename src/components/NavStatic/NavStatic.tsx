@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./NavStatic.module.scss";
+import classNames from "../Nav/Nav.module.scss";
 import type NavStaticProps from "./NavStaticProps";
 import type { BaseNavStaticProps } from "./NavStaticProps";
 

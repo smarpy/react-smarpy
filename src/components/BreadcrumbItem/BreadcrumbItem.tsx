@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./BreadcrumbItem.module.scss";
+import classNames from "../Breadcrumb/Breadcrumb.module.scss";
 import type { BaseBreadcrumbItemProps } from "./BreadcrumbItemProps";
 import type BreadcrumbItemProps from "./BreadcrumbItemProps";
 

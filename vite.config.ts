@@ -10,8 +10,10 @@ import preserveDirectives from "rollup-preserve-directives";
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
+    cssCodeSplit: true,
     copyPublicDir: false,
     emptyOutDir: true,
+    minify: "oxc",
     lib: {
       entry: resolve(__dirname, "src/react-smarpy.ts"),
       name: "ReactSmarpy",
@@ -43,7 +45,7 @@ export default defineConfig({
           "@emotion/react/jsx-runtime": "EmotionReactJsxRuntime",
           "@emotion/react": "EmotionReact",
         },
-        assetFileNames: "assets/[name][extname]",
+        assetFileNames: "[name].[ext]",
         entryFileNames: "[name].js",
         preserveModules: true,
         preserveModulesRoot: "src",

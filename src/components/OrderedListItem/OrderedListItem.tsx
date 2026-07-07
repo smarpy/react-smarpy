@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./OrderedListItem.module.scss";
+import classNames from "../OrderedList/OrderedList.module.scss";
 import type OrderedListItemProps from "./OrderedListItemProps";
 import type { BaseOrderedListItemProps } from "./OrderedListItemProps";
 

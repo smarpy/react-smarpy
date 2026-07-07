@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./AdminNavMenu.module.scss";
+import classNames from "../AdminNav/AdminNav.module.scss";
 import type AdminNavMenuProps from "./AdminNavMenuProps";
 import type { BaseAdminNavMenuProps } from "./AdminNavMenuProps";
 

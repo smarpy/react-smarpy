@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./AccordionSummary.module.scss";
+import classNames from "../Accordion/Accordion.module.scss";
 import type AccordionSummaryProps from "./AccordionSummaryProps";
 import type { BaseAccordionSummaryProps } from "./AccordionSummaryProps";
 

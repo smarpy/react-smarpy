@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./CardHeader.module.scss";
+import classNames from "../Card/Card.module.scss";
 import type CardHeaderProps from "./CardHeaderProps";
 import type { BaseCardHeaderProps } from "./CardHeaderProps";
 

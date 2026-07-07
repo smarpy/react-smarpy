@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./UnorderedListItem.module.scss";
+import classNames from "../UnorderedList/UnorderedList.module.scss";
 import type UnorderedListItemProps from "./UnorderedListItemProps";
 import type { BaseUnorderedListItemProps } from "./UnorderedListItemProps";
 

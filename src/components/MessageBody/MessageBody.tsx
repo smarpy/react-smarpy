@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./MessageBody.module.scss";
+import classNames from "../Message/Message.module.scss";
 import type MessageBodyProps from "./MessageBodyProps";
 import type { BaseMessageBodyProps } from "./MessageBodyProps";
 

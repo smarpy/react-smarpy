@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./ModalContent.module.scss";
+import classNames from "../Modal/Modal.module.scss";
 import type ModalContentProps from "./ModalContentProps";
 import type { BaseModalContentProps } from "./ModalContentProps";
 

@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./MessageHeader.module.scss";
+import classNames from "../Message/Message.module.scss";
 import type MessageHeaderProps from "./MessageHeaderProps";
 import type { BaseMessageHeaderProps } from "./MessageHeaderProps";
 
