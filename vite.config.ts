@@ -10,7 +10,6 @@ import preserveDirectives from "rollup-preserve-directives";
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
-    cssCodeSplit: true,
     copyPublicDir: false,
     emptyOutDir: true,
     minify: "oxc",
@@ -45,7 +44,9 @@ export default defineConfig({
           "@emotion/react/jsx-runtime": "EmotionReactJsxRuntime",
           "@emotion/react": "EmotionReact",
         },
-        assetFileNames: "[name].[ext]",
+        assetFileNames: (chunkInfo) => {
+          return `${chunkInfo.names[0].replaceAll(".module", "")}`
+        },
         entryFileNames: "[name].js",
         preserveModules: true,
         preserveModulesRoot: "src",
