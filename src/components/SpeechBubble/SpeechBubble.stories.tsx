@@ -32,7 +32,7 @@ export const Plain: Story = {
       <SpeechBubble {...props}>
         <SpeechBubbleAvatarContainer>
           <SpeechBubbleAvatar
-            src="https://smartupcorp.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
+            src="https://smarpy.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
             alt="avatar"
           />
         </SpeechBubbleAvatarContainer>
@@ -60,7 +60,7 @@ export const AvatarSizeLarge: Story = {
       <SpeechBubble {...props}>
         <SpeechBubbleAvatarContainer>
           <SpeechBubbleAvatar
-            src="https://smartupcorp.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
+            src="https://smarpy.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
             alt="avatar"
           />
         </SpeechBubbleAvatarContainer>
@@ -88,7 +88,7 @@ export const AvatarSizeSmall: Story = {
       <SpeechBubble {...props}>
         <SpeechBubbleAvatarContainer>
           <SpeechBubbleAvatar
-            src="https://smartupcorp.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
+            src="https://smarpy.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
             alt="avatar"
           />
         </SpeechBubbleAvatarContainer>
@@ -116,7 +116,7 @@ export const AvatarHasBorder: Story = {
       <SpeechBubble {...props}>
         <SpeechBubbleAvatarContainer>
           <SpeechBubbleAvatar
-            src="https://smartupcorp.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
+            src="https://smarpy.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
             alt="avatar"
           />
         </SpeechBubbleAvatarContainer>
@@ -144,7 +144,7 @@ export const IsAvatarCircle: Story = {
       <SpeechBubble {...props}>
         <SpeechBubbleAvatarContainer>
           <SpeechBubbleAvatar
-            src="https://smartupcorp.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
+            src="https://smarpy.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
             alt="avatar"
           />
         </SpeechBubbleAvatarContainer>
@@ -182,7 +182,7 @@ export const IsRight: Story = {
         </SpeechBubbleContentContainer>
         <SpeechBubbleAvatarContainer>
           <SpeechBubbleAvatar
-            src="https://smartupcorp.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
+            src="https://smarpy.github.io/smarpy/images/avatar/kaminorse/kaminorse.png"
             alt="avatar"
           />
         </SpeechBubbleAvatarContainer>

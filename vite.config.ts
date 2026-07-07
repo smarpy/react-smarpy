@@ -10,6 +10,7 @@ import preserveDirectives from "rollup-preserve-directives";
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
+    copyPublicDir: false,
     emptyOutDir: true,
     lib: {
       entry: resolve(__dirname, "src/react-smarpy.ts"),
@@ -44,6 +45,8 @@ export default defineConfig({
         },
         assetFileNames: "assets/[name][extname]",
         entryFileNames: "[name].js",
+        preserveModules: true,
+        preserveModulesRoot: "src",
       },
     },
   },
@@ -52,9 +55,7 @@ export default defineConfig({
       globalModulePaths: [/.*\/src\/base\/Smarpy\/.*/],
     },
     preprocessorOptions: {
-      scss: {
-        api: "modern-compiler",
-      },
+      scss: {},
     },
   },
   plugins: [
@@ -62,6 +63,10 @@ export default defineConfig({
       jsxImportSource: "@emotion/react",
     }),
     libInjectCss(),
-    dts({ include: ["src"] }),
+    dts({
+      insertTypesEntry: true,
+      include: ["src"],
+      tsconfigPath: resolve(__dirname, "tsconfig.json"),
+    }),
   ],
 });

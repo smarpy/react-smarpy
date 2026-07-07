@@ -28,6 +28,6 @@
     "noFallthroughCasesInSwitch": true,
   },
   "include": ["./src/**/*.ts", "./src/**/*.tsx"],
-  "exclude": ["./**/dist"],
+  "exclude": ["./**/dist", "./**/storybook-static"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

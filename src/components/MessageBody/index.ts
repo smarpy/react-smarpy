@@ -1,4 +1,5 @@
 export { default } from "./MessageBody";
+
 export { default as MessageBody } from "./MessageBody";
 export * from "./MessageBody";
 
