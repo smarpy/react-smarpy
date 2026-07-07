@@ -1,1 +1,8 @@
+@use "../../../node_modules/@smarpy/style/src/sass/variables/index.scss" as variables with (
+  $output-color-class: false,
+);
 @forward "../../../node_modules/@smarpy/style/src/sass/components/element.scss";
+
+.dummy-main {
+  color: transparent;
+}

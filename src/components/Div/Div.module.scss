@@ -2,3 +2,7 @@
   $output-color-class: false,
 );
 @forward "../../../node_modules/@smarpy/style/src/sass/components/element.scss";
+
+.dummy-div {
+  color: transparent;
+}

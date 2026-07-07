@@ -2,3 +2,7 @@
   $output-color-class: false,
 );
 @forward "../../../node_modules/@smarpy/style/src/sass/components/input.scss";
+
+.dummy-textarea {
+  color: transparent;
+}
