@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./AdminMain.module.scss";
+import classNames from "../Admin/Admin.module.scss";
 import type AdminMainProps from "./AdminMainProps";
 import type { BaseAdminMainProps } from "./AdminMainProps";
 

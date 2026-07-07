@@ -2,7 +2,7 @@
 
 import { type ColorName } from "../../types";
 import { classNameUtility, emotionCssUtility } from "../../utilities";
-import classNames from "./AdminSidebar.module.scss";
+import classNames from "../Admin/Admin.module.scss";
 import type AdminSidebarProps from "./AdminSidebarProps";
 import type { BaseAdminSidebarProps } from "./AdminSidebarProps";
 
